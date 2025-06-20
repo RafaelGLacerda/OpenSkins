@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Enhanced roulette animations */
+@keyframes roulette-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(239, 68, 68, 0.8), 0 0 60px rgba(239, 68, 68, 0.4);
+  }
+}
+
+@keyframes particle-orbit {
+  0% {
+    transform: rotate(0deg) translateX(30px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(30px) rotate(-360deg);
+  }
+}
+
+@keyframes shimmer-gold {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes winning-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.8), 0 0 40px rgba(251, 191, 36, 0.6), 0 0 60px rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.9), 0 0 60px rgba(239, 68, 68, 0.7), 0 0 90px rgba(251, 191, 36, 0.5);
+  }
+}
+
+/* Custom border width */
+.border-3 {
+  border-width: 3px;
+}
+
+/* Z-index utilities */
+.z-15 {
+  z-index: 15;
+}
+
+/* Performance optimizations */
+.roulette-container {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.roulette-item {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth animations */
+.smooth-transform {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Enhanced motion blur for speed effect */
+.motion-blur-light {
+  filter: blur(0.5px);
+}
+
+.motion-blur-medium {
+  filter: blur(1px);
+}
+
+.motion-blur-heavy {
+  filter: blur(2px);
+}
+
+/* Winning item special effects */
+.winning-item {
+  animation: winning-glow 1s ease-in-out infinite;
+}
+
+.winning-border {
+  animation: shimmer-gold 2s linear infinite;
+  background: linear-gradient(45deg, #fbbf24, #f59e0b, #d97706, #fbbf24);
+  background-size: 200% 200%;
+}
+
+/* Particle effects */
+.floating-particle {
+  animation: particle-orbit 4s linear infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .roulette-item {
+    width: 120px;
+    height: 180px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .roulette-container,
+  .roulette-item,
+  .floating-particle {
+    animation: none;
+    transition: none;
+  }
+}
