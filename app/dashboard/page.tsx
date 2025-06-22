@@ -84,7 +84,7 @@ export default function Dashboard() {
       <header className="border-b border-red-500/30 bg-black/50 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <h1 className="text-2xl font-bold text-white">VALORANT Cases</h1>
+            <h1 className="text-2xl font-bold text-white">OpenSkins Cases</h1>
             <Badge variant="outline" className="border-yellow-500 text-yellow-500">
               {user?.username}
             </Badge>
