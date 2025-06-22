@@ -1,6 +1,6 @@
 # 🎯 OpenSkins https://valorantskins.onrender.com/
 
-**ValorantSkins** é um site de entretenimento inspirado em plataformas de abertura de caixas como as de CS2, mas voltado ao universo de skins do jogo Valorant.
+**OpenSkins** é um site de entretenimento inspirado em plataformas de abertura de caixas como as de CS2, mas voltado ao universo de skins do jogo Valorant.
 
 > ⚠️ **Atenção: Este site é fictício. Não envolve dinheiro real, nem skins reais.**
 
