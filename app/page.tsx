@@ -75,7 +75,7 @@ export default function AuthPage() {
         <div className="text-white space-y-6">
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-red-400 to-white bg-clip-text text-transparent">
-              VALORANT
+              OpenSkins
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold">Case Opening</h2>
             <p className="text-lg text-gray-300">Abra caixas, colete skins raras e monte sua coleção dos sonhos!</p>
