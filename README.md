@@ -8,7 +8,7 @@
 
 ## 🧩 Sobre o Projeto
 
-O **ValorantSkins** simula a experiência de abrir caixas com skins aleatórias, oferecendo uma experiência visual e interativa semelhante a sites reais — mas com fins exclusivamente recreativos.
+O **OpenSkins** simula a experiência de abrir caixas com skins aleatórias, oferecendo uma experiência visual e interativa semelhante a sites reais — mas com fins exclusivamente recreativos.
 
 ### ✅ Funcionalidades
 
