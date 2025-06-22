@@ -1,34 +1,33 @@
-export interface ValorantSkin {
-  id: string
-  name: string
-  weapon: string
-  collection: string
-  rarity: "Select" | "Deluxe" | "Premium" | "Ultra" | "Exclusive"
-  vpPrice: number
-  imageUrl: string
-  releaseDate: string
-}
-
-export interface CaseType {
-  id: string
-  name: string
-  description: string
-  price: number
-  type: "common" | "special" | "knife"
-  image: string
-  probabilities: {
-    Select: number
-    Deluxe: number
-    Premium: number
-    Ultra: number
-    Exclusive: number
+  export interface ValorantSkin {
+    id: string
+    name: string
+    weapon: string
+    collection: string
+    rarity: "Select" | "Deluxe" | "Premium" | "Ultra" | "Exclusive"
+    vpPrice: number
+    imageUrl: string
+    releaseDate: string
   }
-  availableSkins: string[] // IDs das skins disponíveis nesta caixa
-}
 
-// Base de dados completa com skins reais do Valorant
+  export interface CaseType {
+    id: string
+    name: string
+    description: string
+    price: number
+    type: "common" | "special" | "knife"
+    image: string
+    probabilities: {
+      Select: number
+      Deluxe: number
+      Premium: number
+      Ultra: number
+      Exclusive: number
+    }
+    availableSkins: string[] // IDs das skins disponíveis nesta caixa
+  }
+
+  // Base de dados completa com skins reais do Valorant
 export const VALORANT_SKINS: ValorantSkin[] = [
-  // EXCLUSIVE (Facas e skins ultra raras) - 0.75%
   {
     id: "prime-karambit",
     name: "Prime Karambit",
@@ -36,7 +35,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Prime Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/prime-karambit.png",
+    imageUrl: "images/prime-karambit.png",
     releaseDate: "2020-06-02",
   },
   {
@@ -46,7 +45,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Recon Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/recon-balisong.png",
+    imageUrl: "images/recon-balisong.png",
     releaseDate: "2021-01-12",
   },
   {
@@ -56,7 +55,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Glitchpop Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/glitchpop-dagger.png",
+    imageUrl: "images/glitchpop-dagger.png",
     releaseDate: "2020-08-04",
   },
   {
@@ -66,7 +65,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Elderflame Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/elderflame-dagger.png",
+    imageUrl: "images/elderflame-dagger.png",
     releaseDate: "2020-07-08",
   },
   {
@@ -76,7 +75,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Sovereign Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/sovereign-sword.png",
+    imageUrl: "images/sovereign-sword.png",
     releaseDate: "2020-09-02",
   },
   {
@@ -86,7 +85,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Reaver Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/reaver-karambit.png",
+    imageUrl: "images/reaver-karambit.png",
     releaseDate: "2021-02-24",
   },
   {
@@ -96,7 +95,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Ion Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/ion-energy-sword.png",
+    imageUrl: "images/ion-energy-sword.png",
     releaseDate: "2021-03-30",
   },
   {
@@ -106,11 +105,9 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Singularity Collection",
     rarity: "Exclusive",
     vpPrice: 4350,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/singularity-knife.png",
+    imageUrl: "images/singularity-knife.png",
     releaseDate: "2021-07-07",
   },
-
-  // ULTRA (Skins premium) - 10.5%
   {
     id: "prime-vandal",
     name: "Prime Vandal",
@@ -118,7 +115,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Prime Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/prime-vandal.png",
+    imageUrl: "images/prime-vandal.png",
     releaseDate: "2020-06-02",
   },
   {
@@ -128,8 +125,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Elderflame Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl:
-      "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/elderflame-operator.png",
+    imageUrl: "images/elderflame-operator.png",
     releaseDate: "2020-07-08",
   },
   {
@@ -139,7 +135,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Glitchpop Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/glitchpop-phantom.png",
+    imageUrl: "images/glitchpop-phantom.png",
     releaseDate: "2020-08-04",
   },
   {
@@ -149,7 +145,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Reaver Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/reaver-vandal.png",
+    imageUrl: "images/reaver-vandal.png",
     releaseDate: "2021-02-24",
   },
   {
@@ -159,7 +155,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Ion Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/ion-phantom.png",
+    imageUrl: "images/ion-phantom.png",
     releaseDate: "2021-03-30",
   },
   {
@@ -169,8 +165,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Singularity Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl:
-      "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/singularity-phantom.png",
+    imageUrl: "images/singularity-phantom.png",
     releaseDate: "2021-07-07",
   },
   {
@@ -180,7 +175,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Oni Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/oni-phantom.png",
+    imageUrl: "images/oni-phantom.png",
     releaseDate: "2020-10-13",
   },
   {
@@ -190,11 +185,9 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Dragon Collection",
     rarity: "Ultra",
     vpPrice: 1775,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/dragon-vandal.png",
+    imageUrl: "images/dragon-vandal.png",
     releaseDate: "2021-01-12",
   },
-
-  // PREMIUM (Skins de qualidade) - 20%
   {
     id: "sovereign-ghost",
     name: "Sovereign Ghost",
@@ -202,7 +195,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Sovereign Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/sovereign-ghost.png",
+    imageUrl: "images/sovereign-ghost.png",
     releaseDate: "2020-09-02",
   },
   {
@@ -212,7 +205,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Reaver Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/reaver-sheriff.png",
+    imageUrl: "images/reaver-sheriff.png",
     releaseDate: "2021-02-24",
   },
   {
@@ -222,7 +215,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Ion Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/ion-sheriff.png",
+    imageUrl: "images/ion-sheriff.png",
     releaseDate: "2021-03-30",
   },
   {
@@ -232,7 +225,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Prime Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/prime-spectre.png",
+    imageUrl: "images/prime-spectre.png",
     releaseDate: "2020-06-02",
   },
   {
@@ -242,7 +235,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Glitchpop Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/glitchpop-judge.png",
+    imageUrl: "images/glitchpop-judge.png",
     releaseDate: "2020-08-04",
   },
   {
@@ -252,7 +245,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Elderflame Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/elderflame-judge.png",
+    imageUrl: "images/elderflame-judge.png",
     releaseDate: "2020-07-08",
   },
   {
@@ -262,7 +255,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Oni Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/oni-shorty.png",
+    imageUrl: "images/oni-shorty.png",
     releaseDate: "2020-10-13",
   },
   {
@@ -272,11 +265,9 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Recon Collection",
     rarity: "Premium",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/recon-guardian.png",
+    imageUrl: "images/recon-guardian.png",
     releaseDate: "2021-01-12",
   },
-
-  // DELUXE (Skins intermediárias) - 35%
   {
     id: "spline-phantom",
     name: "Spline Phantom",
@@ -284,7 +275,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Spline Collection",
     rarity: "Deluxe",
     vpPrice: 1275,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/spline-phantom.png",
+    imageUrl: "images/spline-phantom.png",
     releaseDate: "2020-04-07",
   },
   {
@@ -294,7 +285,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Nebula Collection",
     rarity: "Deluxe",
     vpPrice: 1275,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/nebula-guardian.png",
+    imageUrl: "images/nebula-guardian.png",
     releaseDate: "2020-04-07",
   },
   {
@@ -304,7 +295,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Sakura Collection",
     rarity: "Deluxe",
     vpPrice: 1275,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/sakura-vandal.png",
+    imageUrl: "images/sakura-vandal.png",
     releaseDate: "2021-04-27",
   },
   {
@@ -314,7 +305,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Forsaken Collection",
     rarity: "Deluxe",
     vpPrice: 1275,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/forsaken-operator.png",
+    imageUrl: "images/forsaken-operator.png",
     releaseDate: "2020-10-27",
   },
   {
@@ -324,7 +315,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Magepunk Collection",
     rarity: "Deluxe",
     vpPrice: 1275,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/magepunk-spectre.png",
+    imageUrl: "images/magepunk-spectre.png",
     releaseDate: "2020-12-08",
   },
   {
@@ -334,11 +325,9 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Wasteland Collection",
     rarity: "Deluxe",
     vpPrice: 1275,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/wasteland-vandal.png",
+    imageUrl: "images/wasteland-vandal.png",
     releaseDate: "2020-05-12",
   },
-
-  // SELECT (Skins básicas) - 33.75%
   {
     id: "avalanche-spectre",
     name: "Avalanche Spectre",
@@ -346,17 +335,17 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Avalanche Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/avalanche-spectre.png",
+    imageUrl: "images/avalanche-spectre.png",
     releaseDate: "2020-04-07",
   },
   {
-    id: "convex-vandal",
-    name: "Convex Vandal",
-    weapon: "Vandal",
+    id: "convex-bulldog",
+    name: "Convex Bulldog",
+    weapon: "Bulldog",
     collection: "Convex Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/convex-vandal.png",
+    imageUrl: "images/convex-bulldog.png",
     releaseDate: "2020-04-07",
   },
   {
@@ -366,7 +355,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Dot EXE Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/dot-exe-vandal.png",
+    imageUrl: "images/dot-exe-vandal.png",
     releaseDate: "2020-04-07",
   },
   {
@@ -376,27 +365,27 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Smite Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/smite-classic.png",
+    imageUrl: "images/smite-classic.png",
     releaseDate: "2020-04-07",
   },
   {
     id: "surge-spectre",
-    name: "Surge Spectre",
+    name: "Surge Stinger",
     weapon: "Spectre",
     collection: "Surge Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/surge-spectre.png",
+    imageUrl: "images/surge-stinger.png",
     releaseDate: "2020-04-07",
   },
   {
-    id: "luxe-classic",
-    name: "Luxe Classic",
-    weapon: "Classic",
+    id: "luxe-operator",
+    name: "Luxe Operator",
+    weapon: "Operator",
     collection: "Luxe Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/luxe-classic.png",
+    imageUrl: "images/luxe-operator.png",
     releaseDate: "2020-04-07",
   },
   {
@@ -406,7 +395,7 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Rush Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/rush-frenzy.png",
+    imageUrl: "images/rush-frenzy.png",
     releaseDate: "2020-04-07",
   },
   {
@@ -416,266 +405,267 @@ export const VALORANT_SKINS: ValorantSkin[] = [
     collection: "Infantry Collection",
     rarity: "Select",
     vpPrice: 875,
-    imageUrl: "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8b1b1b1b1b1b1b1b/infantry-spectre.png",
+    imageUrl: "images/infantry-spectre.png",
     releaseDate: "2020-04-07",
   },
 ]
 
-// 10 tipos de caixas diferentes
-export const CASE_TYPES: CaseType[] = [
-  // 5 CAIXAS COMUNS (R$ 3-10)
-  {
-    id: "starter-case",
-    name: "Caixa Iniciante",
-    description: "Perfeita para começar sua coleção! Skins básicas e intermediárias.",
-    price: 3.0,
-    type: "common",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 60, Deluxe: 35, Premium: 5, Ultra: 0, Exclusive: 0 },
-    availableSkins: [
-      "avalanche-spectre",
-      "convex-vandal",
-      "dot-exe-vandal",
-      "smite-classic",
-      "surge-spectre",
-      "luxe-classic",
-      "rush-frenzy",
-      "infantry-spectre",
-      "spline-phantom",
-      "nebula-guardian",
-      "sakura-vandal",
-    ],
-  },
-  {
-    id: "classic-case",
-    name: "Caixa Clássica",
-    description: "Mix equilibrado de skins Select e Deluxe com chance de Premium.",
-    price: 5.0,
-    type: "common",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 45, Deluxe: 40, Premium: 15, Ultra: 0, Exclusive: 0 },
-    availableSkins: [
-      "avalanche-spectre",
-      "convex-vandal",
-      "spline-phantom",
-      "nebula-guardian",
-      "sakura-vandal",
-      "forsaken-operator",
-      "magepunk-spectre",
-      "sovereign-ghost",
-      "recon-guardian",
-      "luxe-classic",
-    ],
-  },
-  {
-    id: "standard-case",
-    name: "Caixa Padrão",
-    description: "Boa chance de skins Deluxe e Premium com possibilidade de Ultra.",
-    price: 7.0,
-    type: "common",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 30, Deluxe: 45, Premium: 20, Ultra: 5, Exclusive: 0 },
-    availableSkins: [
-      "spline-phantom",
-      "nebula-guardian",
-      "sakura-vandal",
-      "forsaken-operator",
-      "magepunk-spectre",
-      "wasteland-vandal",
-      "sovereign-ghost",
-      "reaver-sheriff",
-      "ion-sheriff",
-      "prime-spectre",
-      "prime-vandal",
-    ],
-  },
-  {
-    id: "advanced-case",
-    name: "Caixa Avançada",
-    description: "Foco em skins Premium e Deluxe com boa chance de Ultra.",
-    price: 8.5,
-    type: "common",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 20, Deluxe: 40, Premium: 30, Ultra: 10, Exclusive: 0 },
-    availableSkins: [
-      "forsaken-operator",
-      "magepunk-spectre",
-      "wasteland-vandal",
-      "sovereign-ghost",
-      "reaver-sheriff",
-      "ion-sheriff",
-      "prime-spectre",
-      "glitchpop-judge",
-      "elderflame-judge",
-      "prime-vandal",
-      "elderflame-operator",
-    ],
-  },
-  {
-    id: "premium-case",
-    name: "Caixa Premium",
-    description: "Skins de alta qualidade com excelente chance de Ultra.",
-    price: 10.0,
-    type: "common",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 15, Deluxe: 30, Premium: 40, Ultra: 15, Exclusive: 0 },
-    availableSkins: [
-      "sovereign-ghost",
-      "reaver-sheriff",
-      "ion-sheriff",
-      "prime-spectre",
-      "glitchpop-judge",
-      "elderflame-judge",
-      "oni-shorty",
-      "recon-guardian",
-      "prime-vandal",
-      "elderflame-operator",
-      "glitchpop-phantom",
-      "reaver-vandal",
-    ],
-  },
 
-  // 3 CAIXAS ESPECIAIS (R$ 25-40) - Skins especiais e facas
-  {
-    id: "elite-case",
-    name: "Caixa Elite",
-    description: "Skins Ultra premium com chance de conseguir facas exclusivas!",
-    price: 25.0,
-    type: "special",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 0, Deluxe: 15, Premium: 50, Ultra: 30, Exclusive: 5 },
-    availableSkins: [
-      "sovereign-ghost",
-      "reaver-sheriff",
-      "ion-sheriff",
-      "prime-spectre",
-      "glitchpop-judge",
-      "elderflame-judge",
-      "prime-vandal",
-      "elderflame-operator",
-      "glitchpop-phantom",
-      "reaver-vandal",
-      "ion-phantom",
-      "singularity-phantom",
-      "oni-phantom",
-      "dragon-vandal",
-      "prime-karambit",
-      "glitchpop-dagger",
-    ],
-  },
-  {
-    id: "legendary-case",
-    name: "Caixa Lendária",
-    description: "As melhores skins do jogo com alta chance de facas!",
-    price: 35.0,
-    type: "special",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 0, Deluxe: 5, Premium: 35, Ultra: 50, Exclusive: 10 },
-    availableSkins: [
-      "prime-spectre",
-      "glitchpop-judge",
-      "elderflame-judge",
-      "oni-shorty",
-      "prime-vandal",
-      "elderflame-operator",
-      "glitchpop-phantom",
-      "reaver-vandal",
-      "ion-phantom",
-      "singularity-phantom",
-      "oni-phantom",
-      "dragon-vandal",
-      "prime-karambit",
-      "recon-balisong",
-      "glitchpop-dagger",
-      "elderflame-dagger",
-    ],
-  },
-  {
-    id: "ultimate-case",
-    name: "Caixa Suprema",
-    description: "O máximo em qualidade! Apenas skins Ultra e Exclusive.",
-    price: 40.0,
-    type: "special",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 0, Deluxe: 0, Premium: 20, Ultra: 65, Exclusive: 15 },
-    availableSkins: [
-      "prime-vandal",
-      "elderflame-operator",
-      "glitchpop-phantom",
-      "reaver-vandal",
-      "ion-phantom",
-      "singularity-phantom",
-      "oni-phantom",
-      "dragon-vandal",
-      "prime-karambit",
-      "recon-balisong",
-      "glitchpop-dagger",
-      "elderflame-dagger",
-      "sovereign-sword",
-      "reaver-karambit",
-      "ion-energy-sword",
-      "singularity-knife",
-    ],
-  },
+  // 10 tipos de caixas diferentes
+  export const CASE_TYPES: CaseType[] = [
+    // 5 CAIXAS COMUNS (R$ 3-10)
+    {
+      id: "starter-case",
+      name: "Caixa Iniciante",
+      description: "Perfeita para começar sua coleção! Skins básicas e intermediárias.",
+      price: 3.0,
+      type: "common",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 60, Deluxe: 35, Premium: 5, Ultra: 0, Exclusive: 0 },
+      availableSkins: [
+        "avalanche-spectre",
+        "convex-bulldog",
+        "dot-exe-vandal",
+        "smite-classic",
+        "surge-spectre",
+        "luxe-classic",
+        "rush-frenzy",
+        "infantry-spectre",
+        "spline-phantom",
+        "nebula-guardian",
+        "sakura-vandal",
+      ],
+    },
+    {
+      id: "classic-case",
+      name: "Caixa Clássica",
+      description: "Mix equilibrado de skins Select e Deluxe com chance de Premium.",
+      price: 5.0,
+      type: "common",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 45, Deluxe: 40, Premium: 15, Ultra: 0, Exclusive: 0 },
+      availableSkins: [
+        "avalanche-spectre",
+        "convex-bulldog",
+        "spline-phantom",
+        "nebula-guardian",
+        "sakura-vandal",
+        "forsaken-operator",
+        "magepunk-spectre",
+        "sovereign-ghost",
+        "recon-guardian",
+        "luxe-classic",
+      ],
+    },
+    {
+      id: "standard-case",
+      name: "Caixa Padrão",
+      description: "Boa chance de skins Deluxe e Premium com possibilidade de Ultra.",
+      price: 7.0,
+      type: "common",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 30, Deluxe: 45, Premium: 20, Ultra: 5, Exclusive: 0 },
+      availableSkins: [
+        "spline-phantom",
+        "nebula-guardian",
+        "sakura-vandal",
+        "forsaken-operator",
+        "magepunk-spectre",
+        "wasteland-vandal",
+        "sovereign-ghost",
+        "reaver-sheriff",
+        "ion-sheriff",
+        "prime-spectre",
+        "prime-vandal",
+      ],
+    },
+    {
+      id: "advanced-case",
+      name: "Caixa Avançada",
+      description: "Foco em skins Premium e Deluxe com boa chance de Ultra.",
+      price: 8.5,
+      type: "common",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 20, Deluxe: 40, Premium: 30, Ultra: 10, Exclusive: 0 },
+      availableSkins: [
+        "forsaken-operator",
+        "magepunk-spectre",
+        "wasteland-vandal",
+        "sovereign-ghost",
+        "reaver-sheriff",
+        "ion-sheriff",
+        "prime-spectre",
+        "glitchpop-judge",
+        "elderflame-judge",
+        "prime-vandal",
+        "elderflame-operator",
+      ],
+    },
+    {
+      id: "premium-case",
+      name: "Caixa Premium",
+      description: "Skins de alta qualidade com excelente chance de Ultra.",
+      price: 10.0,
+      type: "common",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 15, Deluxe: 30, Premium: 40, Ultra: 15, Exclusive: 0 },
+      availableSkins: [
+        "sovereign-ghost",
+        "reaver-sheriff",
+        "ion-sheriff",
+        "prime-spectre",
+        "glitchpop-judge",
+        "elderflame-judge",
+        "oni-shorty",
+        "recon-guardian",
+        "prime-vandal",
+        "elderflame-operator",
+        "glitchpop-phantom",
+        "reaver-vandal",
+      ],
+    },
 
-  // 2 CAIXAS APENAS DE FACA (R$ 90-120)
-  {
-    id: "knife-collection",
-    name: "Coleção de Facas",
-    description: "100% garantido de conseguir uma faca! Todas as facas disponíveis.",
-    price: 90.0,
-    type: "knife",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 0, Deluxe: 0, Premium: 0, Ultra: 0, Exclusive: 100 },
-    availableSkins: [
-      "prime-karambit",
-      "recon-balisong",
-      "glitchpop-dagger",
-      "elderflame-dagger",
-      "sovereign-sword",
-      "reaver-karambit",
-      "ion-energy-sword",
-      "singularity-knife",
-    ],
-  },
-  {
-    id: "exclusive-knife",
-    name: "Facas Exclusivas",
-    description: "As facas mais raras e desejadas do Valorant! 100% faca garantida.",
-    price: 120.0,
-    type: "knife",
-    image: "/placeholder.svg?height=200&width=200",
-    probabilities: { Select: 0, Deluxe: 0, Premium: 0, Ultra: 0, Exclusive: 100 },
-    availableSkins: [
-      "prime-karambit",
-      "recon-balisong",
-      "glitchpop-dagger",
-      "elderflame-dagger",
-      "sovereign-sword",
-      "reaver-karambit",
-      "ion-energy-sword",
-      "singularity-knife",
-    ],
-  },
-]
+    // 3 CAIXAS ESPECIAIS (R$ 25-40) - Skins especiais e facas
+    {
+      id: "elite-case",
+      name: "Caixa Elite",
+      description: "Skins Ultra premium com chance de conseguir facas exclusivas!",
+      price: 25.0,
+      type: "special",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 0, Deluxe: 15, Premium: 50, Ultra: 30, Exclusive: 5 },
+      availableSkins: [
+        "sovereign-ghost",
+        "reaver-sheriff",
+        "ion-sheriff",
+        "prime-spectre",
+        "glitchpop-judge",
+        "elderflame-judge",
+        "prime-vandal",
+        "elderflame-operator",
+        "glitchpop-phantom",
+        "reaver-vandal",
+        "ion-phantom",
+        "singularity-phantom",
+        "oni-phantom",
+        "dragon-vandal",
+        "prime-karambit",
+        "glitchpop-dagger",
+      ],
+    },
+    {
+      id: "legendary-case",
+      name: "Caixa Lendária",
+      description: "As melhores skins do jogo com alta chance de facas!",
+      price: 35.0,
+      type: "special",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 0, Deluxe: 5, Premium: 35, Ultra: 50, Exclusive: 10 },
+      availableSkins: [
+        "prime-spectre",
+        "glitchpop-judge",
+        "elderflame-judge",
+        "oni-shorty",
+        "prime-vandal",
+        "elderflame-operator",
+        "glitchpop-phantom",
+        "reaver-vandal",
+        "ion-phantom",
+        "singularity-phantom",
+        "oni-phantom",
+        "dragon-vandal",
+        "prime-karambit",
+        "recon-balisong",
+        "glitchpop-dagger",
+        "elderflame-dagger",
+      ],
+    },
+    {
+      id: "ultimate-case",
+      name: "Caixa Suprema",
+      description: "O máximo em qualidade! Apenas skins Ultra e Exclusive.",
+      price: 40.0,
+      type: "special",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 0, Deluxe: 0, Premium: 20, Ultra: 65, Exclusive: 15 },
+      availableSkins: [
+        "prime-vandal",
+        "elderflame-operator",
+        "glitchpop-phantom",
+        "reaver-vandal",
+        "ion-phantom",
+        "singularity-phantom",
+        "oni-phantom",
+        "dragon-vandal",
+        "prime-karambit",
+        "recon-balisong",
+        "glitchpop-dagger",
+        "elderflame-dagger",
+        "sovereign-sword",
+        "reaver-karambit",
+        "ion-energy-sword",
+        "singularity-knife",
+      ],
+    },
 
-export function getSkinsByRarity(rarity: string): ValorantSkin[] {
-  return VALORANT_SKINS.filter((skin) => skin.rarity === rarity)
-}
+    // 2 CAIXAS APENAS DE FACA (R$ 90-120)
+    {
+      id: "knife-collection",
+      name: "Coleção de Facas",
+      description: "100% garantido de conseguir uma faca! Todas as facas disponíveis.",
+      price: 90.0,
+      type: "knife",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 0, Deluxe: 0, Premium: 0, Ultra: 0, Exclusive: 100 },
+      availableSkins: [
+        "prime-karambit",
+        "recon-balisong",
+        "glitchpop-dagger",
+        "elderflame-dagger",
+        "sovereign-sword",
+        "reaver-karambit",
+        "ion-energy-sword",
+        "singularity-knife",
+      ],
+    },
+    {
+      id: "exclusive-knife",
+      name: "Facas Exclusivas",
+      description: "As facas mais raras e desejadas do Valorant! 100% faca garantida.",
+      price: 120.0,
+      type: "knife",
+      image: "/placeholder.svg?height=200&width=200",
+      probabilities: { Select: 0, Deluxe: 0, Premium: 0, Ultra: 0, Exclusive: 100 },
+      availableSkins: [
+        "prime-karambit",
+        "recon-balisong",
+        "glitchpop-dagger",
+        "elderflame-dagger",
+        "sovereign-sword",
+        "reaver-karambit",
+        "ion-energy-sword",
+        "singularity-knife",
+      ],
+    },
+  ]
 
-export function getSkinById(id: string): ValorantSkin | undefined {
-  return VALORANT_SKINS.find((skin) => skin.id === id)
-}
+  export function getSkinsByRarity(rarity: string): ValorantSkin[] {
+    return VALORANT_SKINS.filter((skin) => skin.rarity === rarity)
+  }
 
-export function getCaseById(id: string): CaseType | undefined {
-  return CASE_TYPES.find((caseType) => caseType.id === id)
-}
+  export function getSkinById(id: string): ValorantSkin | undefined {
+    return VALORANT_SKINS.find((skin) => skin.id === id)
+  }
 
-export function getSkinsForCase(caseId: string): ValorantSkin[] {
-  const caseType = getCaseById(caseId)
-  if (!caseType) return []
+  export function getCaseById(id: string): CaseType | undefined {
+    return CASE_TYPES.find((caseType) => caseType.id === id)
+  }
 
-  return caseType.availableSkins
-    .map((skinId) => getSkinById(skinId))
-    .filter((skin): skin is ValorantSkin => skin !== undefined)
-}
+  export function getSkinsForCase(caseId: string): ValorantSkin[] {
+    const caseType = getCaseById(caseId)
+    if (!caseType) return []
+
+    return caseType.availableSkins
+      .map((skinId) => getSkinById(skinId))
+      .filter((skin): skin is ValorantSkin => skin !== undefined)
+  }

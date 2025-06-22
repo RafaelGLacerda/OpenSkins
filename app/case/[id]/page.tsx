@@ -223,10 +223,11 @@ export default function CaseOpening() {
                     <Card key={skin.id} className={`bg-black/60 border-2 ${getRarityColor(skin.rarity)}`}>
                       <CardContent className="p-4 text-center">
                         <img
-                          src={skin.imageUrl || "/placeholder.svg?height=80&width=80"}
+                          src={skin.imageUrl ? `/${skin.imageUrl}` : "/placeholder.svg?height=80&width=80"}
                           alt={skin.name}
                           className="w-full h-20 object-cover rounded mb-2"
                         />
+
                         <h4 className="font-semibold text-white text-xs">{skin.name}</h4>
                         <p className="text-xs text-gray-400">{skin.weapon}</p>
                         <Badge variant="outline" className={`mt-2 text-xs ${getRarityColor(skin.rarity)}`}>
@@ -246,13 +247,12 @@ export default function CaseOpening() {
                 <Button
                   onClick={openCase}
                   disabled={opening || !user || user.balance < caseData.price}
-                  className={`px-8 py-4 text-lg font-bold ${
-                    caseData.type === "knife"
-                      ? "bg-yellow-600 hover:bg-yellow-700 text-black"
-                      : caseData.type === "special"
-                        ? "bg-purple-600 hover:bg-purple-700 text-white"
-                        : "bg-blue-600 hover:bg-blue-700 text-white"
-                  }`}
+                  className={`px-8 py-4 text-lg font-bold ${caseData.type === "knife"
+                    ? "bg-yellow-600 hover:bg-yellow-700 text-black"
+                    : caseData.type === "special"
+                      ? "bg-purple-600 hover:bg-purple-700 text-white"
+                      : "bg-blue-600 hover:bg-blue-700 text-white"
+                    }`}
                 >
                   {opening
                     ? "Abrindo..."
@@ -276,10 +276,11 @@ export default function CaseOpening() {
             <Card className={`bg-black/60 border-4 ${getRarityColor(wonSkin!.rarity)} animate-pulse`}>
               <CardContent className="p-8">
                 <img
-                  src={wonSkin!.imageUrl || "/placeholder.svg?height=200&width=200"}
+                  src={wonSkin!.imageUrl ? `/${wonSkin!.imageUrl}` : "/placeholder.svg?height=200&width=200"}
                   alt={wonSkin!.name}
                   className="w-48 h-48 object-cover rounded-lg mx-auto mb-4 border-2 border-current"
                 />
+
                 <h3 className="text-3xl font-bold text-white mb-2">{wonSkin!.name}</h3>
                 <p className="text-lg text-gray-400 mb-2">{wonSkin!.weapon}</p>
                 <p className="text-md text-gray-500 mb-4">{wonSkin!.collection}</p>

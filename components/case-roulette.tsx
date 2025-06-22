@@ -185,11 +185,13 @@ export function CaseRoulette({ skins, wonSkin, isSpinning, onSpinComplete }: Cas
                   {/* Skin image */}
                   <div className="relative w-24 h-24 rounded-lg overflow-hidden border-2 border-white/30 bg-black/20">
                     <img
-                      src={skin.imageUrl || "/placeholder.svg?height=96&width=96"}
+                      src={skin.imageUrl ? `/${skin.imageUrl}` : "/placeholder.svg?height=80&width=80"}
                       alt={skin.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-20 object-cover rounded mb-2"
                     />
                   </div>
+
+
 
                   {/* Skin info */}
                   <div className="text-center space-y-1">

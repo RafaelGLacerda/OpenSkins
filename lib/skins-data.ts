@@ -22,9 +22,8 @@ export interface CaseType {
   }
 }
 
-// Dados reais das skins do Valorant organizadas por raridade
 export const VALORANT_SKINS: Skin[] = [
-  // LEGENDARY SKINS (Facas e skins ultra raras) - 1%
+  // LEGENDARY
   {
     id: "recon-balisong",
     name: "Recon Balisong",
@@ -32,7 +31,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Legendary",
     collection: "Recon Collection",
     price: 4350,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/recon-balisong.png",
   },
   {
     id: "prime-karambit",
@@ -41,7 +40,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Legendary",
     collection: "Prime Collection",
     price: 4350,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/prime-karambit.png",
   },
   {
     id: "glitchpop-dagger",
@@ -50,7 +49,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Legendary",
     collection: "Glitchpop Collection",
     price: 4350,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/glitchpop-dagger.png",
   },
   {
     id: "elderflame-dagger",
@@ -59,7 +58,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Legendary",
     collection: "Elderflame Collection",
     price: 4350,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/elderflame-dagger.png",
   },
   {
     id: "sovereign-sword",
@@ -68,10 +67,10 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Legendary",
     collection: "Sovereign Collection",
     price: 4350,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/sovereign-sword.png",
   },
 
-  // EPIC SKINS (Skins premium) - 5-10%
+  // EPIC
   {
     id: "prime-vandal",
     name: "Prime Vandal",
@@ -79,7 +78,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Prime Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/prime-vandal.png",
   },
   {
     id: "elderflame-operator",
@@ -88,7 +87,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Elderflame Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/elderflame-operator.png",
   },
   {
     id: "glitchpop-phantom",
@@ -97,7 +96,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Glitchpop Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/glitchpop-phantom.png",
   },
   {
     id: "ion-phantom",
@@ -106,7 +105,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Ion Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/ion-phantom.png",
   },
   {
     id: "reaver-vandal",
@@ -115,7 +114,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Reaver Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/reaver-vandal.png",
   },
   {
     id: "singularity-phantom",
@@ -124,7 +123,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Singularity Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/singularity-phantom.png",
   },
   {
     id: "oni-phantom",
@@ -133,7 +132,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Oni Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/oni-phantom.png",
   },
   {
     id: "dragon-vandal",
@@ -142,10 +141,10 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Epic",
     collection: "Dragon Collection",
     price: 1775,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/dragon-vandal.png",
   },
 
-  // RARE SKINS (Skins de qualidade) - 15-25%
+  // RARE
   {
     id: "sovereign-ghost",
     name: "Sovereign Ghost",
@@ -153,7 +152,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Sovereign Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/sovereign-ghost.png",
   },
   {
     id: "reaver-sheriff",
@@ -162,7 +161,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Reaver Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/reaver-sheriff.png",
   },
   {
     id: "ion-sheriff",
@@ -171,7 +170,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Ion Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/ion-sheriff.png",
   },
   {
     id: "prime-spectre",
@@ -180,7 +179,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Prime Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/prime-spectre.png",
   },
   {
     id: "glitchpop-judge",
@@ -189,7 +188,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Glitchpop Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/glitchpop-judge.png",
   },
   {
     id: "elderflame-judge",
@@ -198,7 +197,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Elderflame Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/elderflame-judge.png",
   },
   {
     id: "oni-shorty",
@@ -207,7 +206,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Oni Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/oni-shorty.png",
   },
   {
     id: "recon-guardian",
@@ -216,10 +215,10 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Rare",
     collection: "Recon Collection",
     price: 875,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/recon-guardian.png",
   },
 
-  // COMMON SKINS (Skins básicas) - 60-79%
+  // COMMON
   {
     id: "avalanche-spectre",
     name: "Avalanche Spectre",
@@ -227,16 +226,16 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Common",
     collection: "Avalanche Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/avalanche-spectre.png",
   },
   {
-    id: "convex-vandal",
-    name: "Convex Vandal",
-    weapon: "Vandal",
+    id: "convex-bulldog",
+    name: "Convex Bulldog",
+    weapon: "Bulldog",
     rarity: "Common",
     collection: "Convex Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/convex-bulldog.png",
   },
   {
     id: "dot-exe-vandal",
@@ -245,7 +244,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Common",
     collection: "Dot EXE Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/dot-exe-vandal.png",
   },
   {
     id: "smite-classic",
@@ -254,7 +253,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Common",
     collection: "Smite Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/smite-classic.png",
   },
   {
     id: "surge-spectre",
@@ -263,25 +262,25 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Common",
     collection: "Surge Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/surge-spectre.png",
   },
   {
-    id: "tethered-realms-phantom",
-    name: "Tethered Realms Phantom",
-    weapon: "Phantom",
+    id: "tethered-realms-ghost",
+    name: "Tethered Realms Ghost",
+    weapon: "Ghost",
     rarity: "Common",
     collection: "Tethered Realms Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/tethered-realms-ghost.png",
   },
   {
-    id: "luxe-classic",
-    name: "Luxe Classic",
-    weapon: "Classic",
+    id: "luxe-operator",
+    name: "Luxe Operator",
+    weapon: "operator",
     rarity: "Common",
     collection: "Luxe Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/luxe-operator.png",
   },
   {
     id: "rush-frenzy",
@@ -290,7 +289,7 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Common",
     collection: "Rush Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/rush-frenzy.png",
   },
   {
     id: "infantry-spectre",
@@ -299,34 +298,34 @@ export const VALORANT_SKINS: Skin[] = [
     rarity: "Common",
     collection: "Infantry Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/infantry-spectre.png",
   },
   {
-    id: "couture-judge",
-    name: "Couture Judge",
-    weapon: "Judge",
+    id: "ego-vandal",
+    name: "Ego Vandal",
+    weapon: "Vandal",
     rarity: "Common",
-    collection: "Couture Collection",
-    price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    collection: "Ego Collection",
+    price: 1775,
+    image: "/images/ego-vandal.png",
   },
   {
-    id: "nunca-olvidados-classic",
-    name: "Nunca Olvidados Classic",
-    weapon: "Classic",
+    id: "nunca-olvidados-bulldog",
+    name: "Nunca Olvidados Bulldog",
+    weapon: "Bulldog",
     rarity: "Common",
     collection: "Nunca Olvidados Collection",
-    price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    price: 1275,
+    image: "/images/nunca-olvidados-bulldog.png",
   },
   {
-    id: "artisan-stinger",
-    name: "Artisan Stinger",
-    weapon: "Stinger",
+    id: "artisan-ghost",
+    name: "Artisan Ghost",
+    weapon: "Ghost",
     rarity: "Common",
     collection: "Artisan Collection",
     price: 275,
-    image: "/placeholder.svg?height=100&width=150",
+    image: "/images/artisan-ghost.png",
   },
 ]
 
@@ -336,7 +335,7 @@ export const CASE_TYPES: CaseType[] = [
     name: "Caixa Lendária",
     description: "Chance de conseguir facas raras e skins épicas! Melhor chance de itens lendários.",
     price: 15.0,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/legendary-case.png",
     probabilities: {
       Legendary: 1,
       Epic: 10,
@@ -349,7 +348,7 @@ export const CASE_TYPES: CaseType[] = [
     name: "Caixa Premium",
     description: "Skins de alta qualidade com ótimas chances de itens épicos e raros!",
     price: 8.0,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/premium-case.png",
     probabilities: {
       Legendary: 0,
       Epic: 5,
@@ -362,7 +361,7 @@ export const CASE_TYPES: CaseType[] = [
     name: "Caixa Básica",
     description: "Perfeita para começar sua coleção! Boa chance de skins raras.",
     price: 3.0,
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/basic-case.png",
     probabilities: {
       Legendary: 0,
       Epic: 0,

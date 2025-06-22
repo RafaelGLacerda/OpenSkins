@@ -252,10 +252,11 @@ export default function Inventory() {
                 <CardHeader className="pb-2">
                   <div className="relative">
                     <img
-                      src={item.skin.imageUrl || "/placeholder.svg?height=120&width=120"}
+                      src={item.skin.imageUrl ? `/${item.skin.imageUrl}` : "/placeholder.svg?height=120&width=120"}
                       alt={item.skin.name}
                       className="w-full h-32 object-cover rounded-lg"
                     />
+
                     <div className="absolute top-2 right-2">{getRarityIcon(item.skin.rarity)}</div>
                   </div>
                 </CardHeader>
