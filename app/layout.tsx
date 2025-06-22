@@ -3,8 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'ValorantSkins',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  description: 'Open case Valorant',
+  generator: 'Rafael Lacerda',
   icons: 'logo.png',
 }
 
