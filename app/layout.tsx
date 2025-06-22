@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ValorantSkins',
-  description: 'Open case Valorant',
+  title: 'OpenSkins',
+  description: 'Open case Valorant 100% Fake',
   generator: 'Rafael Lacerda',
   icons: 'logo.png',
 }
