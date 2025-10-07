@@ -43,6 +43,6 @@ O **OpenSkins** simula a experiência de abrir caixas com skins aleatórias, ofe
 
 ```bash
 git clone https://github.com/RafaelGLacerda/OpenSkins.git
-OpenSkins
+cd OpenSkins
 npm install
 npm run dev
