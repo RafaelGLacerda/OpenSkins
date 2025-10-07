@@ -42,14 +42,7 @@ O **OpenSkins** simula a experiência de abrir caixas com skins aleatórias, ofe
 ## 🧪 Como Rodar Localmente
 
 ```bash
-# Clone o repositório
-git clone https://github.com/RafaelGLacerda/ValorantSkins.git
-
-# Acesse o diretório
-cd ValorantSkins
-
-# Instale as dependências
+git clone https://github.com/RafaelGLacerda/OpenSkins.git
+OpenSkins
 npm install
-
-# Rode o projeto em modo de desenvolvimento
 npm run dev
